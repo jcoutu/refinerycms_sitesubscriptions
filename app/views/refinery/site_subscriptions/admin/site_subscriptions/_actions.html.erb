@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::SiteSubscriptions::Admin::SiteSubscriptionsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.site_subscriptions_admin_site_subscriptions_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_site_subscriptions_admin_site_subscription_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::SiteSubscriptions::Admin::SiteSubscriptionsController.sortable? && ::Refinery::SiteSubscriptions::SiteSubscription.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Site Subscriptions"),
+                 refinery.site_subscriptions_admin_site_subscriptions_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Site Subscriptions"),
+                 refinery.site_subscriptions_admin_site_subscriptions_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

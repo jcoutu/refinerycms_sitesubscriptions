@@ -1,0 +1,29 @@
+zh-CN:
+  refinery:
+    plugins:
+      site_subscriptions:
+        title: Site Subscriptions
+    site_subscriptions:
+      admin:
+        site_subscriptions:
+          actions:
+            create_new: 建立新的 Site Subscription
+            reorder: 对 Site Subscriptions 重新排序
+            reorder_done: 对 Site Subscriptions 的重新排序结束
+          records:
+            title: Site Subscriptions
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Site Subscriptions yet. Click "Add New Site Subscription" to add your first site subscription.
+            no_items_yet: 目前没有 Site Subscriptions . 点击 "Add New Site Subscription" 创建一个site subscription.
+          site_subscription:
+            view_live_html: 查看 site subscription 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 site subscription
+            delete: 永久删除 site subscription
+      site_subscriptions:
+        show:
+          other: 其他 Site Subscriptions
+  activerecord:
+    attributes:
+      'refinery/site_subscriptions/site_subscription':
+        date: Date

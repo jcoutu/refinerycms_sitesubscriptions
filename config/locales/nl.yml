@@ -1,0 +1,27 @@
+nl:
+  refinery:
+    plugins:
+      site_subscriptions:
+        title: Site Subscriptions
+    site_subscriptions:
+      admin:
+        site_subscriptions:
+          actions:
+            create_new: Maak een nieuwe Site Subscription
+            reorder: Wijzig de volgorde van de Site Subscriptions
+            reorder_done: Klaar met het wijzingen van de volgorde van de Site Subscriptions
+          records:
+            title: Site Subscriptions
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Site Subscriptions. Druk op 'Maak een nieuwe Site Subscription' om de eerste aan te maken.
+          site_subscription:
+            view_live_html: Bekijk deze site subscription op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze site subscription
+            delete: Verwijder deze site subscription voor eeuwig
+      site_subscriptions:
+        show:
+          other: Andere Site Subscriptions
+  activerecord:
+    attributes:
+      'refinery/site_subscriptions/site_subscription':
+        date: Date

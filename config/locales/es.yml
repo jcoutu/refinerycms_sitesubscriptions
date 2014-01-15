@@ -1,0 +1,28 @@
+es:
+  refinery:
+    plugins:
+      site_subscriptions:
+        title: Site Subscriptions
+#        article: masculino/femenino
+    site_subscriptions:
+      admin:
+        site_subscriptions:
+          actions:
+            create_new: Crear nuevo site subscription
+            reorder: Reordenar site subscriptions
+            reorder_done: Reordenación de site subscriptions completada
+          records:
+            title: Site Subscriptions
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay site subscriptions todavía. Pulsa en "Crear nuevo Site Subscription" para crear tu primer site subscription.
+          site_subscription:
+            view_live_html: Ver este site subscription como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este site subscription
+            delete: Borrar este site subscription para siempre
+      site_subscriptions:
+        show:
+          other: Otros site subscriptions
+  activerecord:
+    attributes:
+      'refinery/site_subscriptions/site_subscription':
+        date: Date

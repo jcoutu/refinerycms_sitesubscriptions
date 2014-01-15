@@ -1,0 +1,27 @@
+fr:
+  refinery:
+    plugins:
+      site_subscriptions:
+        title: Site Subscriptions
+    site_subscriptions:
+      admin:
+        site_subscriptions:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Site Subscription
+            reorder: Réordonner les Site Subscriptions
+            reorder_done: Fin de réordonnancement des Site Subscriptions
+          records:
+            title: Site Subscriptions
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Site Subscription. Cliquer sur "Créer un(e) nouve(au/l/lle) Site Subscription" pour créer votre premi(er/ère) site subscription.'
+          site_subscription:
+            view_live_html: Voir ce(t/tte) site subscription <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) site subscription
+            delete: Supprimer définitivement ce(t/tte) site subscription
+      site_subscriptions:
+        show:
+          other: Autres Site Subscriptions
+  activerecord:
+    attributes:
+      'refinery/site_subscriptions/site_subscription':
+        date: Date

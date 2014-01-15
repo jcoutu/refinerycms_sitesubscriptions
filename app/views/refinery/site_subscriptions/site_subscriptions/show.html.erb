@@ -1,0 +1,27 @@
+<% content_for :body_content_title do %>
+  <%= @site_subscription.title %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Date</h1>
+    <p>
+      <%=raw @site_subscription.date %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="site_subscriptions">
+      <% @site_subscriptions.each do |site_subscription| %>
+        <li>
+          <%= link_to site_subscription.title, refinery.site_subscriptions_site_subscription_path(site_subscription) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

@@ -1,0 +1,27 @@
+en:
+  refinery:
+    plugins:
+      site_subscriptions:
+        title: Site Subscriptions
+    site_subscriptions:
+      admin:
+        site_subscriptions:
+          actions:
+            create_new: Add New Site Subscription
+            reorder: Reorder Site Subscriptions
+            reorder_done: Done Reordering Site Subscriptions
+          records:
+            title: Site Subscriptions
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Site Subscriptions yet. Click "Add New Site Subscription" to add your first site subscription.
+          site_subscription:
+            view_live_html: View this site subscription live <br/><em>(opens in a new window)</em>
+            edit: Edit this site subscription
+            delete: Remove this site subscription forever
+      site_subscriptions:
+        show:
+          other: Other Site Subscriptions
+  activerecord:
+    attributes:
+      'refinery/site_subscriptions/site_subscription':
+        date: Date

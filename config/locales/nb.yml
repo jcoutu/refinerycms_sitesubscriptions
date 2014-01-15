@@ -1,0 +1,27 @@
+nb:
+  refinery:
+    plugins:
+      site_subscriptions:
+        title: Site Subscriptions
+    site_subscriptions:
+      admin:
+        site_subscriptions:
+          actions:
+            create_new: Lag en ny Site Subscription
+            reorder: Endre rekkefølgen på Site Subscriptions
+            reorder_done: Ferdig å endre rekkefølgen Site Subscriptions
+          records:
+            title: Site Subscriptions
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Site Subscriptions enda. Klikk på "Lag en ny Site Subscription" for å legge til din første site subscription.
+          site_subscription:
+            view_live_html: Vis hvordan denne site subscription ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne site subscription
+            delete: Fjern denne site subscription permanent
+      site_subscriptions:
+        show:
+          other: Andre Site Subscriptions
+  activerecord:
+    attributes:
+      'refinery/site_subscriptions/site_subscription':
+        date: Date
